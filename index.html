@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Driftwood • Wood Art</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/4d3e6e9f4d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">🌿 Driftwood Art</a>
+      <div class="menu">
+        <a href="#karya">Karya</a>
+        <a href="#material">Material</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#komisi">Komisi</a>
+        <a href="#maps">Lokasi</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home" class="hero">
+    <video autoplay muted loop playsinline class="bg-video">
+      <source src="https://cdn.coverr.co/videos/coverr-forest-in-the-mountains-1867/1080p.mp4" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Seni Kayu dari Alam</h1>
+      <p>Menghidupkan kembali kayu hanyut, aus, dan berongga menjadi karya penuh makna.</p>
+      <button onclick="scrollToSection('karya')">Lihat Koleksi</button>
+    </div>
+  </header>
+
+  <!-- Karya -->
+  <section id="karya" class="section">
+    <h2>Koleksi Karya</h2>
+    <div class="gallery">
+      <img src="https://source.unsplash.com/500x600/?wood,sculpture" alt="Karya 1">
+      <img src="https://source.unsplash.com/500x500/?wood,art" alt="Karya 2">
+      <img src="https://source.unsplash.com/500x700/?wood,craft" alt="Karya 3">
+      <img src="https://source.unsplash.com/500x400/?vintage,motorcycle" alt="Karya 4">
+      <img src="https://source.unsplash.com/500x600/?nature,object" alt="Karya 5">
+    </div>
+  </section>
+
+  <!-- Material -->
+  <section id="material" class="section material">
+    <h2>Material Utama</h2>
+    <div class="material-cards">
+      <div class="card">
+        <i class="fas fa-water fa-2x"></i>
+        <h3>Driftwood</h3>
+        <p>Kayu yang terbawa arus laut dengan bentuk alami unik.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-hammer fa-2x"></i>
+        <h3>Worn Wood</h3>
+        <p>Kayu yang aus dimakan waktu, meninggalkan tekstur klasik.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-bug fa-2x"></i>
+        <h3>Eaten Wood</h3>
+        <p>Kayu berongga karena serangga, menghadirkan estetika organik.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tentang -->
+  <section id="tentang" class="section about">
+    <div class="about-img">
+      <img src="https://source.unsplash.com/500x500/?artist,workshop" alt="Seniman">
+    </div>
+    <div class="about-text">
+      <h2>Tentang Seniman</h2>
+      <p>
+        Seorang seniman yang memanfaatkan Driftwood, Worn Wood, dan Eaten Wood untuk menciptakan miniatur arsitektur, motor klasik, dan objek kehidupan.
+        Karya ini menggambarkan perjalanan waktu dan harmoni dengan alam.
+      </p>
+    </div>
+  </section>
+
+  <!-- Komisi -->
+  <section id="komisi" class="section commission">
+    <h2>Pesan Karya</h2>
+    <div class="commission-container">
+      <form class="form">
+        <input type="text" placeholder="Nama" required>
+        <input type="email" placeholder="Email" required>
+        <input type="text" placeholder="Kontak WhatsApp" required>
+        <textarea placeholder="Deskripsi ide Anda" required></textarea>
+        <button type="submit">Kirim Permintaan</button>
+      </form>
+      <div class="commission-info">
+        <h3>Kategori Ukuran</h3>
+        <ul>
+          <li>Miniatur kecil: 10–20 cm</li>
+          <li>Miniatur menengah: 20–40 cm</li>
+          <li>Miniatur besar: >40 cm</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Maps -->
+  <section id="maps" class="section maps">
+    <h2>Lokasi Studio</h2>
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.937648484283!2d110.3695!3d-7.8014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5789b9e7d7c1%3A0x123456789abcdef!2sYogyakarta!5e0!3m2!1sid!2sid!4v1690000000000!5m2!1sid!2sid" 
+        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© <span id="year"></span> Driftwood Art | Harmoni dengan Alam 🌱</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
